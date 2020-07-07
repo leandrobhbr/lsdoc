@@ -1,5 +1,5 @@
 <template>
-  <div>My component Leandro Campos - Profissão: {{ profissao }}</div>
+  <div>My component Leandro Campos 1 - Profissão: {{ profissao }}</div>
 </template>
 
 <script>
