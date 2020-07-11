@@ -1,7 +1,7 @@
 <template>
   <q-page padding>
     <!-- content -->
-    <p>Ola, esse é um teste de cor do texto.</p>
+    <h3 class="text-color-black text-weight-bold">Manual de uso Limesurvey</h3>
   </q-page>
 </template>
 
@@ -10,3 +10,10 @@ export default {
   // name: 'PageName',
 }
 </script>
+
+<!-- Notice lang="stylus" -->
+<style lang="stylus">
+div
+  .text-color-black
+    color black
+</style>

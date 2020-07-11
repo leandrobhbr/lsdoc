@@ -12,7 +12,7 @@
           @click="leftDrawer = !leftDrawer"
         />
         <q-toolbar-title>
-          Header
+          Manual Limesurvey
         </q-toolbar-title>
       </q-toolbar>
     </q-header>
@@ -39,6 +39,7 @@
       <!-- QScrollArea is optional -->
       <q-scroll-area class="fit q-pa-sm">
         <!-- Content here -->
+        <DrawerOpcoes></DrawerOpcoes>
       </q-scroll-area>
     </q-drawer>
 
@@ -51,12 +52,18 @@
 </template>
 
 <script>
+
+import DrawerOpcoes from 'components/DrawerOpcoes'
+
 export default {
-  // name: 'LayoutName',
+
+  components: {
+    DrawerOpcoes
+  },
 
   data () {
     return {
-      leftDrawer: false
+      leftDrawer: true
     }
   }
 }
