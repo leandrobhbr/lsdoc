@@ -10,10 +10,3 @@ export default {
   // name: 'PageName',
 }
 </script>
-
-<!-- Notice lang="stylus" -->
-<style lang="stylus">
-div
-  .text-color-black
-    color black
-</style>

@@ -76,4 +76,6 @@ export default {
   background-color #58585a
 .text-color-limesurvey
   color #058ec7
+.text-color-black
+    color black
 </style>
