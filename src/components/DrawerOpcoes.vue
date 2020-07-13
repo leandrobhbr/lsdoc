@@ -2,6 +2,19 @@
   <div class="q-pa-Md" >
     <q-list class="text-primary">
       <q-item
+        clickable
+        v-ripple
+        :active="link === 'index'"
+        @click="linkPagina('index')"
+        active-class="my-menu-link"
+      >
+        <q-item-section avatar>
+          <q-icon name="home" />
+        </q-item-section>
+
+        <q-item-section>Manual Limesurvey</q-item-section>
+      </q-item>
+      <q-item
         v-for="opcao in opcoes"
         :key="opcao[1]"
         clickable
@@ -41,7 +54,7 @@ export default {
         ['Editando E-mails', 'EditandoEmails', 'edit'],
         ['Ativando Questionário', 'AtivandoQuestionario', 'check_box'],
         ['Enviando E-mail', 'EnviandoEmail', 'send'],
-        ['Visualizando Estatíticas', 'VisualizandoEstatiticas', 'remove_red_eye'],
+        ['Visualizando Estatísticas', 'VisualizandoEstatiticas', 'remove_red_eye'],
         ['Visualizando Registros', 'VisualizandoRegistros', 'remove_red_eye'],
         ['Exportando Estatísticas', 'ExportandoEstatisticas', 'reply'],
         ['Exportando Registros', 'ExportandoRegistros', 'reply'],

@@ -5,7 +5,7 @@ const routes: RouteConfig[] = [
     path: '/',
     component: () => import('layouts/Base.vue'),
     children: [
-      { path: '', component: () => import('pages/Index.vue') },
+      { path: '', name: 'index', component: () => import('pages/Index.vue') },
       { path: 'criando-questionario', name: 'CriandoQuestionario', component: () => import('pages/CriandoQuestionario.vue') },
       { path: 'configurando-apresentacao', name: 'ConfigurandoApresentacao', component: () => import('pages/ConfigurandoApresentacao.vue') },
       { path: 'criando-grupo', name: 'CriandoGrupo', component: () => import('pages/CriandoGrupo.vue') },
@@ -14,7 +14,7 @@ const routes: RouteConfig[] = [
       { path: 'editando-emails', name: 'EditandoEmails', component: () => import('pages/EditandoEmails.vue') },
       { path: 'ativando-questionario', name: 'AtivandoQuestionario', component: () => import('pages/AtivandoQuestionario.vue') },
       { path: 'enviando-email', name: 'EnviandoEmail', component: () => import('pages/EnviandoEmail.vue') },
-      { path: 'visualizando-estatiticas', name: 'VisualizandoEstatiticas', component: () => import('pages/VisualizandoEstatisticas.vue') },
+      { path: 'visualizando-estatisticas', name: 'VisualizandoEstatiticas', component: () => import('pages/VisualizandoEstatisticas.vue') },
       { path: 'visualizando-registros', name: 'VisualizandoRegistros', component: () => import('pages/VisualizandoRegistros.vue') },
       { path: 'exportando-rstatisticas', name: 'ExportandoEstatisticas', component: () => import('pages/ExportandoEstatisticas.vue') },
       { path: 'exportando-registros', name: 'ExportandoRegistros', component: () => import('pages/ExportandoRegistros.vue') },

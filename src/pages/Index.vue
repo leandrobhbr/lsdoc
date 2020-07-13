@@ -1,7 +1,7 @@
 <template>
   <q-page padding>
     <!-- content -->
-    <h3 class="text-color-black text-weight-bold">Manual de uso Limesurvey</h3>
+    <h4 class="text-color-black text-weight-bold">Manual de uso Limesurvey</h4>
   </q-page>
 </template>
 
