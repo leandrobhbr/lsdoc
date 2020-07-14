@@ -8,16 +8,19 @@
         style="widtg: 100%"
       />
       <p>Figura 1 - <i>Opções de exibição</i></p>
+      <hr>
       <q-img
         src="manual_limesurvey_cecom/configuracao_apresentacao/configuracao_apresentacao_02.png"
         style="widtg: 100%"
       />
       <p>Figura 2 - <i>Permitir navegação inversa</i></p>
+      <hr>
       <q-img
         src="manual_limesurvey_cecom/configuracao_apresentacao/configuracao_apresentacao_03.png"
         style="widtg: 100%"
       />
       <p>Figura 3 - <i>Imprimir respostas e visualizar estatística</i></p>
+      <hr>
       <q-img
         src="manual_limesurvey_cecom/configuracao_apresentacao/configuracao_apresentacao_04.png"
         style="widtg: 100%"
