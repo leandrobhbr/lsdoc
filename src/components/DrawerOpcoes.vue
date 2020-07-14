@@ -53,7 +53,7 @@ export default {
         ['Criando Participante', 'CriandoParticipante', 'create'],
         ['Editando E-mails', 'EditandoEmails', 'edit'],
         ['Ativando Questionário', 'AtivandoQuestionario', 'check_box'],
-        ['Enviando E-mail', 'EnviandoEmail', 'send'],
+        ['Enviando E-mail', 'EnviandoEmail', 'mail'],
         ['Visualizando Estatísticas', 'VisualizandoEstatiticas', 'remove_red_eye'],
         ['Visualizando Registros', 'VisualizandoRegistros', 'remove_red_eye'],
         ['Exportando Estatísticas', 'ExportandoEstatisticas', 'reply'],
