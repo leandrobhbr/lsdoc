@@ -62,6 +62,7 @@ export default {
         ['Envio de Convites', 'EnvioDeConvites', 'send'],
         ['Configuração do E-mail', 'ConfiguracaoDoEmail', 'settings'],
         ['Envio de Lembretes', 'EnvioDeLembretes', 'send'],
+        ['Exportar Relatórios', 'ExportarRelatorios', 'reply'],
         ['Configuração das Questões', 'ConfiguracaoDasQuestoes', 'settings'],
         ['Janela de Manutenção', 'JanelaDeManutenção', 'build'],
         ['O que não pode ser feito', 'NaoPodeSerFeito', 'error'],

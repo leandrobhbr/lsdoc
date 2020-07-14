@@ -22,6 +22,7 @@ const routes: RouteConfig[] = [
       { path: 'envio-de-convites', name: 'EnvioDeConvites', component: () => import('pages/EnvioDeConvites.vue') },
       { path: 'configuracao-do-email', name: 'ConfiguracaoDoEmail', component: () => import('pages/ConfiguracaoDoEmail.vue') },
       { path: 'envio-de-lembretes', name: 'EnvioDeLembretes', component: () => import('pages/EnvioDeLembretes.vue') },
+      { path: 'exportar-relatorios', name: 'ExportarRelatorios', component: () => import('pages/ExportarRelatorios.vue') },
       { path: 'configuracao-das-questoes', name: 'ConfiguracaoDasQuestoes', component: () => import('pages/ConfiguracaoDasQuestoes.vue') },
       { path: 'janela-de-manutenção', name: 'JanelaDeManutenção', component: () => import('pages/JanelaDeManutenção.vue') },
       { path: 'nao-pode-der-feito', name: 'NaoPodeSerFeito', component: () => import('pages/NaoPodeSerFeito.vue') },
