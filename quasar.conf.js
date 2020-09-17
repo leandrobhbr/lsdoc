@@ -6,17 +6,11 @@
 // Configuration for your app
 // https://quasar.dev/quasar-cli/quasar-conf-js
 /* eslint-env node */
-/* eslint-disable @typescript-eslint/no-var-requires */
-const { configure } = require('quasar/wrappers')
 
-module.exports = configure(function (ctx) {
+module.exports = function (/* ctx */) {
   return {
     // https://quasar.dev/quasar-cli/supporting-ts
-    supportTS: {
-      tsCheckerConfig: {
-        eslint: true
-      }
-    },
+    supportTS: false,
 
     // https://quasar.dev/quasar-cli/prefetch-feature
     // preFetch: true,
@@ -25,7 +19,7 @@ module.exports = configure(function (ctx) {
     // --> boot files are part of "main.js"
     // https://quasar.dev/quasar-cli/boot-files
     boot: [
-      'composition-api',
+
       'i18n',
       'axios'
     ],
@@ -71,15 +65,12 @@ module.exports = configure(function (ctx) {
 
       // https://quasar.dev/quasar-cli/handling-webpack
       extendWebpack (cfg) {
-        // linting is slow in TS projects, we execute it only for production builds
-        if (ctx.prod) {
-          cfg.module.rules.push({
-            enforce: 'pre',
-            test: /\.(js|vue)$/,
-            loader: 'eslint-loader',
-            exclude: /node_modules/
-          })
-        }
+        cfg.module.rules.push({
+          enforce: 'pre',
+          test: /\.(js|vue)$/,
+          loader: 'eslint-loader',
+          exclude: /node_modules/
+        })
       }
     },
 
@@ -101,6 +92,13 @@ module.exports = configure(function (ctx) {
       // * 'all'  - Manually specify what to import
       importStrategy: 'auto',
 
+      // For special cases outside of where "auto" importStrategy can have an impact
+      // (like functional components as one of the examples),
+      // you can manually specify Quasar components/directives to be available everywhere:
+      //
+      // components: [],
+      // directives: [],
+
       // Quasar plugins
       plugins: []
     },
@@ -121,7 +119,7 @@ module.exports = configure(function (ctx) {
       manifest: {
         name: 'LSDOC',
         short_name: 'LSDOC',
-        description: 'Documentação de uso do LimeSurvey na UFMG',
+        description: 'LSDOC APP',
         display: 'standalone',
         orientation: 'portrait',
         background_color: '#ffffff',
@@ -186,7 +184,7 @@ module.exports = configure(function (ctx) {
       builder: {
         // https://www.electron.build/configuration/configuration
 
-        appId: 'lsdoc'
+        appId: 'lsdoc1'
       },
 
       // More info: https://quasar.dev/quasar-cli/developing-electron-apps/node-integration
@@ -198,4 +196,4 @@ module.exports = configure(function (ctx) {
       }
     }
   }
-})
+}
